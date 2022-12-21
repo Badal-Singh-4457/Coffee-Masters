@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+}
+.main-nav {
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-family: 'Varela Round';
+    margin: 0 0 10px 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 25px;
+    top: 3px;
+    position: relative;
+    padding-right: 8px;
+}
+
+.page {
+    padding: 30px;
+    display: grid;
+    margin: 0;
+}
+
+.box-title {
+    color: #885a2d;
+    font-weight: bold;
+    font-family: 'Varela Round';
+    font-size: 16px;
+}
+
+.item-quantity {
+    grid-area: quantity;
+    font-family: 'Varela Round';
+    font-weight: bold;
+}
+
+.item-title{
+    grid-area: title;
+    margin-top: 10px;
+    font-family: 'Varela Round';
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.item-price{
+    grid-area: price;
+    font-family: 'Varela Round';
+    font-weight: bold;
+}
+
+.item-option{
+    grid-area: option;
+    font-family: 'Varela Round';
+    font-size: 14px;
+    color: #B08968;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.item {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    "quantity title price"
+    "quantity optiion price";
+    border-bottom:solid 2px #DDB892;
+}
+.item:last-child {
+    border-bottom: none;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.item-option-list {
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Varela Round';
+}
+
+.order {
+    grid-area: order;
+    box-shadow:
+    2.2px 2px 7.4px -15px rgba(0, 0, 0, 0.092),
+    5.1px 4.7px 12.5px -15px rgba(0, 0, 0, 0.09),
+    8.7px 8.1px 16.6px -15px rgba(0, 0, 0, 0.084),
+    13.5px 12.5px 21.5px -15px rgba(0, 0, 0, 0.077),
+    20.4px 18.8px 30.8px -15px rgba(0, 0, 0, 0.068),
+    39px 36px 64px -15px rgba(0, 0, 0, 0.06) ;
+}
+
+.order:hover {
+    color:  #764218;
+}
+
+.box {
+    background-color: #eee1d5;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.box:hover {
+    background-color: #f5e4d6;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.total {
+    grid-area: total;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round';
+    text-align: center;
+}
+.page {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-areas:
+    "order payment"
+    "total total";
+    grid-template-columns: 1fr 1fr;
+}
+
+div {
+    display: block;
+}
+
+.inputgroup {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-input {
+    display: block;
+    background-color: rgba(0,0,0,0);
+    padding: 8px;
+ 
+    border: 2px  #885a2d solid;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px; 
+    margin-bottom: 25px;
+}
+
+.name-box {
+    box-shadow:
+    2.2px 2px 7.4px -15px rgba(0, 0, 0, 0.092),
+    5.1px 4.7px 12.5px -15px rgba(0, 0, 0, 0.09),
+    8.7px 8.1px 16.6px -15px rgba(0, 0, 0, 0.084),
+    13.5px 12.5px 21.5px -15px rgba(0, 0, 0, 0.077),
+    20.4px 18.8px 30.8px -15px rgba(0, 0, 0, 0.068),
+    39px 36px 64px -15px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.user-input-label {
+    display: inline-block;
+    color: #885a2d;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    position: absolute;
+    background-color: #eee1d5;
+    padding: 0 2px;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: -6px;
+    height: 15px;
+    border-style: none;
+    z-index: 1;
+}
+
+.cc-box {
+    box-shadow:
+    2.2px 2px 7.4px -15px rgba(0, 0, 0, 0.092),
+    5.1px 4.7px 12.5px -15px rgba(0, 0, 0, 0.09),
+    8.7px 8.1px 16.6px -15px rgba(0, 0, 0, 0.084),
+    13.5px 12.5px 21.5px -15px rgba(0, 0, 0, 0.077),
+    20.4px 18.8px 30.8px -15px rgba(0, 0, 0, 0.068),
+    39px 36px 64px -15px rgba(0, 0, 0, 0.06);
+}
+
+.short-input {
+    max-width: 260px;
+}
+
+.bill-counter {
+    margin-bottom: 30px;
+}
+
+.checkout {
+    background-color: #deb993;
+    width: 100%;
+    padding: 13px;
+    border-radius: 21px;
+    border: none;
+    font-family: 'Varela Round';
+    font-size: 20px;
+}
+
+.checkout:hover{
+    color:#703c12;
+}
+
+.final-totals{
+    font-weight: bold;
+}
+
+.final-totals:hover{
+    color: #764218;
+}
+
+.totals-table{
+    height: 140px;
+    width: 1100px;
+    max-width: 500px;
+    font-family: 'Varela Round';
+}
+.totals-table td{
+    padding: 10px;
+}
+
+.totals-table td:left-child {
+    text-align: right;
+    font-family: 'Varela Round';
+    text-align: right;
+} 
+
+button {
+    box-shadow:
+    3.1px 1.3px 7.4px -17px rgba(0, 0, 0, 0.261),
+    7.3px 3px 12.5px -17px rgba(0, 0, 0, 0.256),
+    12.5px 5.2px 16.6px -17px rgba(0, 0, 0, 0.239),
+    19.5px 8px 21.5px -17px rgba(0, 0, 0, 0.217),
+    29.3px 12px 30.8px -17px rgba(0, 0, 0, 0.194),
+    56px 23px 64px -17px rgba(0, 0, 0, 0.17)
+  ;
+}
+
+button:hover {
+    background-color:#d7ab7e;
+}
